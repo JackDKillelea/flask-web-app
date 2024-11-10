@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b7ecb59-6a64-4b93-b447-8c0a3f5bb827" name="Changes" comment="Implement fetching data&#10;&#10;- Implemented fetching data from my Flask web form using my Python back end.&#10;&#10;- Fixed a bug with the submit button, changing the type from button to submit (making it send a post request instead of no request). &#10;&#10;- Fixed an issue with the radio button selections returning &quot;on&quot; instead of the value.">
+    <list default="true" id="9b7ecb59-6a64-4b93-b447-8c0a3f5bb827" name="Changes" comment="Implemented database&#10;&#10;- Added a Flask SQL database to store the data the user inputs. &#10;&#10;- If the database is not created it will be created when the web page loads. &#10;&#10;- The user inputs on the Flask form are now stored in the database. &#10;&#10;- Email is the only unique field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731245041712</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented database&#10;&#10;- Added a Flask SQL database to store the data the user inputs. &#10;&#10;- If the database is not created it will be created when the web page loads. &#10;&#10;- The user inputs on the Flask form are now stored in the database. &#10;&#10;- Email is the only unique field">
+      <option name="closed" value="true" />
+      <created>1731248875634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731248875634</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Implement fetching data&#10;&#10;- Implemented fetching data from my Flask web form using my Python back end.&#10;&#10;- Fixed a bug with the submit button, changing the type from button to submit (making it send a post request instead of no request). &#10;&#10;- Fixed an issue with the radio button selections returning &quot;on&quot; instead of the value." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement fetching data&#10;&#10;- Implemented fetching data from my Flask web form using my Python back end.&#10;&#10;- Fixed a bug with the submit button, changing the type from button to submit (making it send a post request instead of no request). &#10;&#10;- Fixed an issue with the radio button selections returning &quot;on&quot; instead of the value." />
+    <MESSAGE value="Implemented database&#10;&#10;- Added a Flask SQL database to store the data the user inputs. &#10;&#10;- If the database is not created it will be created when the web page loads. &#10;&#10;- The user inputs on the Flask form are now stored in the database. &#10;&#10;- Email is the only unique field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented database&#10;&#10;- Added a Flask SQL database to store the data the user inputs. &#10;&#10;- If the database is not created it will be created when the web page loads. &#10;&#10;- The user inputs on the Flask form are now stored in the database. &#10;&#10;- Email is the only unique field" />
   </component>
 </project>
