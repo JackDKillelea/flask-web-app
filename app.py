@@ -1,12 +1,22 @@
 from datetime import datetime
 from flask import Flask, render_template, request, flash
 from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail, Message
+import variables
 
 app = Flask(__name__)
 
 app.config["SECRET_KEY"] = "myappkey1234"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
+app.config["MAIL_SERVER"] = "smtp.gmail.com"
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USE_SSL"] = True
+app.config["MAIL_USERNAME"] = variables.get_username()
+app.config["MAIL_PASSWORD"] = variables.get_password()
+
 database = SQLAlchemy(app)
+
+mail = Mail(app)
 
 class Form(database.Model):
     id = database.Column(database.Integer, primary_key=True)
@@ -30,8 +40,14 @@ def index():
                     available_date=date_object, current_status=current_status)
         database.session.add(form)
         database.session.commit()
-        flash(f"{first_name}, your form was submitted successfully, we will get back to you soon!", "success")
 
+        msg = Message("New Form Submission", sender=app.config["MAIL_USERNAME"], recipients=[email], body=f"Thank you for your submission, please find your data below:\n"
+                                                                                                          f"First Name: {first_name}\n"
+                                                                                                          f"Last Name: {last_name}\n"
+                                                                                                          f"Available Date: {available_date}\n"
+                                                                                                          f"Current Status:{current_status}\n")
+        mail.send(msg)
+        flash(f"{first_name}, your form was submitted successfully, we will get back to you soon!", "success")
     return render_template("index.html")
 
 if __name__ == "__main__":

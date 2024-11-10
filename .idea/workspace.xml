@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b7ecb59-6a64-4b93-b447-8c0a3f5bb827" name="Changes" comment="Implemented database&#10;&#10;- Added a Flask SQL database to store the data the user inputs. &#10;&#10;- If the database is not created it will be created when the web page loads. &#10;&#10;- The user inputs on the Flask form are now stored in the database. &#10;&#10;- Email is the only unique field">
+    <list default="true" id="9b7ecb59-6a64-4b93-b447-8c0a3f5bb827" name="Changes" comment="Added flash messages&#10;&#10;- Removed unique email so user can apply more than once&#10;&#10;- Added flash messages to give user feedback&#10;&#10;- Changed flash message to give user better feedback (successful alert popup)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,26 +16,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "JackDKillelea"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JackDKillelea&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JackDKillelea/flask-web-app.git",
-    "accountId": "ea1edd02-b220-4287-aec5-e0dad8e9f00e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JackDKillelea/flask-web-app.git&quot;,
+    &quot;accountId&quot;: &quot;ea1edd02-b220-4287-aec5-e0dad8e9f00e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -99,13 +98,22 @@
       <option name="project" value="LOCAL" />
       <updated>1731248875634</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added flash messages&#10;&#10;- Removed unique email so user can apply more than once&#10;&#10;- Added flash messages to give user feedback&#10;&#10;- Changed flash message to give user better feedback (successful alert popup)">
+      <option name="closed" value="true" />
+      <created>1731249619659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731249619659</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Implement fetching data&#10;&#10;- Implemented fetching data from my Flask web form using my Python back end.&#10;&#10;- Fixed a bug with the submit button, changing the type from button to submit (making it send a post request instead of no request). &#10;&#10;- Fixed an issue with the radio button selections returning &quot;on&quot; instead of the value." />
     <MESSAGE value="Implemented database&#10;&#10;- Added a Flask SQL database to store the data the user inputs. &#10;&#10;- If the database is not created it will be created when the web page loads. &#10;&#10;- The user inputs on the Flask form are now stored in the database. &#10;&#10;- Email is the only unique field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented database&#10;&#10;- Added a Flask SQL database to store the data the user inputs. &#10;&#10;- If the database is not created it will be created when the web page loads. &#10;&#10;- The user inputs on the Flask form are now stored in the database. &#10;&#10;- Email is the only unique field" />
+    <MESSAGE value="Added flash messages&#10;&#10;- Removed unique email so user can apply more than once&#10;&#10;- Added flash messages to give user feedback&#10;&#10;- Changed flash message to give user better feedback (successful alert popup)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added flash messages&#10;&#10;- Removed unique email so user can apply more than once&#10;&#10;- Added flash messages to give user feedback&#10;&#10;- Changed flash message to give user better feedback (successful alert popup)" />
   </component>
 </project>
